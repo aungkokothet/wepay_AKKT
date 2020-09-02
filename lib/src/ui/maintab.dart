@@ -22,9 +22,6 @@ class _MainTabState extends State<MainTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("WePay Wallet"),
-      ),
       body: PageView.builder(
         itemCount: pages.length,
         controller: pageController,
@@ -44,7 +41,7 @@ class _MainTabState extends State<MainTab> {
       ),
       bottomNavigationBar: CustomNavigationBar(
         iconSize: 30.0,
-        selectedColor: Color(0xff0c18fb),
+        selectedColor: Theme.of(context).accentColor,
         strokeColor: Color(0x300c18fb),
         unSelectedColor: Colors.grey[600],
         backgroundColor: Colors.white,
