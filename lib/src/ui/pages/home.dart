@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(fontSize: 26),
                   ),
                 ),
-                space10(),
+                space20(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40),
                   child: ListTile(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                space10(),
+                space20(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: RoundedContainer(
