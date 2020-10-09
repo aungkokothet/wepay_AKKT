@@ -2,12 +2,12 @@ import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:wepay/src/ui/pages/exchange.dart';
 import 'package:wepay/src/ui/pages/home.dart';
-import 'package:wepay/src/ui/pages/profile.dart';
+import 'package:wepay/src/ui/pages/send.dart';
 
 List<Widget> pages = <Widget>[
   HomePage(),
   ExchangePage(),
-  ProfilePage(),
+  SendPage(),
 ];
 
 class MainTab extends StatefulWidget {
@@ -42,13 +42,13 @@ class _MainTabState extends State<MainTab> {
       bottomNavigationBar: CustomNavigationBar(
         iconSize: 30.0,
         selectedColor: Theme.of(context).accentColor,
-        strokeColor: Color(0x300c18fb),
+        strokeColor:  Color.fromARGB(50,240,108,155),
         unSelectedColor: Colors.grey[600],
         backgroundColor: Colors.white,
         items: [
           CustomNavigationBarItem(icon: Icons.home),
-          CustomNavigationBarItem(icon: Icons.data_usage),
-          CustomNavigationBarItem(icon: Icons.person_outline),
+          CustomNavigationBarItem(icon: Icons.account_balance),
+          CustomNavigationBarItem(icon: Icons.send),
         ],
         currentIndex: _currentIndex,
         onTap: (index) {
